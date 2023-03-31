@@ -4,18 +4,18 @@
 - `pwd` //*print working directory*
 
 2. Создать папку
-- `mkdir folder` //*make directory*
+- `mkdir dir` //*make directory*
 
 3. Зайти в папку
-- `cd folder` //*change directory*
+- `cd dir` //*change directory*
 
 4. Создать 3 папки
-- `mkdir folder1 folder2 folder3`
-- `mkdir {folder1,folder2,folder3}`
-- `mkdir folder{1..3}`
+- `mkdir dir1 dir2 dir3`
+- `mkdir {dir1,dir2,dir3}`
+- `mkdir dir{1..3}`
 
 5. Зайти в любую папку
-- `cd folder1`
+- `cd dir1`
 
 6. Создать 5 файлов (3 txt, 2 json)
 - `touch file1.txt file2.txt file3.txt file4.json file5.json`
@@ -23,9 +23,9 @@
 - `touch file{1..3}.txt file{4..5}.json`
 
 7. Создать 3 папки
-- `mkdir folder4 folder5 folder6`
-- `mkdir {folder4,folder5,folder6}`
-- `mkdir folder{4..6}`
+- `mkdir dir4 dir5 dir6`
+- `mkdir {dir4,dir5,dir6}`
+- `mkdir dir{4..6}`
 
 8. Вывести список содержимого папки
 - `ls -la`
@@ -51,11 +51,11 @@
 
 ### —
 13. Переместить любые 2 файла, которые вы создали, в любую другую папку
-- `mv folder1/{file1.txt,file4.json} folder2` //*move*
-- `mv folder1/*.* folder2` //*переместить все файлы из папки folder1 в папку folder2*
+- `mv dir1/{file1.txt,file4.json} dir2` //*move*
+- `mv dir1/*.* dir2` //*переместить все файлы из папки dir1 в папку dir2*
 
 14. Скопировать любые 2 файла, которые вы создали, в любую другую папку
-- `cp folder2/{file1.txt,file4.json} folder3` //*copy*
+- `cp dir2/{file1.txt,file4.json} dir3` //*copy*
 
 15. Найти файл по имени
 - `find -name file2.txt`
