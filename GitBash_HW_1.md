@@ -61,7 +61,7 @@
 - `find -name file2.txt`
 - `find -name file2*`
 
-16. Просмотреть содержимое в реальном времени (команда grep). Изучите как она работает
+16. Просмотреть содержимое в реальном времени. Команда "grep" - изучите как она работает
 - `tail -f dir2/file1.txt` //*просмотреть содержимое в реальном времени, обновлять информацию по мере появления новых строк в файле* <pre><kbd>ctrl</kbd>+<kbd>c</kbd> //*выйти из режима просмотра*</pre>
 
 ```
@@ -70,9 +70,10 @@ grep -i 'Hello world!' dir2/file1.txt //найти запись Hello world! в 
 grep -v 'Hello world!' dir2/file1.txt //отобразить строки в файле file1.txt, в которых нет Hello world!
 grep -с 'Hello world!' dir2/file1.txt //посчитать кол-во строк, содержащих Hello world!
 grep -R 'Hello world!' dir2 //показать все файлы, содержащие Hello world!
-Эти функции можно комбинировать, например: grep -iс Hello world! file1.txt
+Эти функции можно комбинировать, например: grep -iс 'Hello world!' dir2/file1.txt
 ```
-Ответ: `tail -f anything_1.txt | grep --line-buffered 17: >> test_qq.txt`
+Найти файлы с содержанием определенного текста и переместить найденные файлы в папку
+- `grep -lr 'Hello world!'./* | xargs mv --backup=numbered -t./dir`
 
 17. Вывести несколько первых строк из текстового файла
 - `head -2 file1.txt` //*выведет первые 2 строки*
