@@ -73,7 +73,7 @@ grep -R 'Hello world!' dir2 //показать все файлы, содержа
 Эти функции можно комбинировать, например: grep -iс 'Hello world!' dir2/file1.txt
 ```
 Найти файлы с содержанием определенного текста и переместить найденные файлы в папку
-- `grep -lr 'Hello world!'./* | xargs mv --backup=numbered -t./dir`
+`grep -lr 'Hello world!'./* | xargs mv --backup=numbered -t./dir`
 
 17. Вывести несколько первых строк из текстового файла
 - `head -2 file1.txt` //*выведет первые 2 строки*
