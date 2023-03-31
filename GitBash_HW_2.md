@@ -170,4 +170,4 @@ done
 `grep -rl sec | xargs rm -rf`
 
 40. Просто вывести в терминал строку “Good job!!”  
-`echo "Good job!!"`
+`echo "Good job\!\!"`
