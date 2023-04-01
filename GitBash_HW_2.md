@@ -111,7 +111,7 @@ done
 `> ./inner_dir_1/tf_4.txt`
 
 21. Найти путь к файлам, у которых есть “tf” в названии  
-`realpath $(find . -name '*tf*')`
+`realpath $(find . -type f -name '*tf*')`
 
 22. Найти путь к файлам, у которых есть “tf” в названии и буквы в любом регистре    
 `realpath $(find . -iname '*tf*')`
